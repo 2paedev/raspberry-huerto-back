@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+
+migrations/
+
+db.sqlite3
+.vscode
