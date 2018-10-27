@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'card_info.apps.CardInfoConfig',
+    'settings_app.apps.SettingsAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +54,15 @@ ROOT_URLCONF = 'raspberry_huerto_back.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 20
+    'PAGE_SIZE': 20,
+    'DEFAULT_RENDERER_CLASSES': (
+        'djangorestframework_camel_case.render.CamelCaseJSONRenderer',
+        # Any other renders
+    ),
+    'DEFAULT_PARSER_CLASSES': (
+        'djangorestframework_camel_case.parser.CamelCaseJSONParser',
+        # Any other parsers
+    ),
 }
 
 TEMPLATES = [
