@@ -87,6 +87,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'raspberry_huerto_back.wsgi.application'
 
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR, 'raspberry_huerto_back/fixtures'),
+)
+
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
