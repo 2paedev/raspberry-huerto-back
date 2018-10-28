@@ -1,13 +1,11 @@
-from card_info.models import CardInfo
-from card_info.serializers import CardInfoSerializer
-from rest_framework import generics
+from .models import CardInfo
+from .serializers import CardInfoSerializer
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 
-class CardInfoList(generics.ListCreateAPIView):
-    queryset = CardInfo.objects.all()
-    serializer_class = CardInfoSerializer
-
-
-class CardInfoDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = CardInfo.objects.all()
-    serializer_class = CardInfoSerializer
+class CardInfoList(APIView):
+    def get(self, request, format=None):
+        last_card_info = CardInfo.objects.latest()
+        serializer = CardInfoSerializer(last_card_info)
+        return Response(serializer.data)
