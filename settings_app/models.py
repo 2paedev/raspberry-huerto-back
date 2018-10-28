@@ -17,7 +17,7 @@ class SettingsApp(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     setting_id = models.PositiveSmallIntegerField(
         choices=SETTING_CHOICES, default=0)
-    value = models.PositiveSmallIntegerField(
+    setting_value = models.PositiveSmallIntegerField(
         choices=SETTING_VALUES_CHOICES, default=0)
 
     class Meta:

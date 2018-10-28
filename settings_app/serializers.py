@@ -5,4 +5,4 @@ from settings_app.models import SettingsApp
 class SettingsAppSerializer(serializers.ModelSerializer):
     class Meta:
         model = SettingsApp
-        fields = ('id', 'setting_id', 'value')
+        fields = ('id', 'setting_id', 'setting_value')

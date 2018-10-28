@@ -4,7 +4,6 @@ from card_info import views
 
 urlpatterns = [
     path('site/all', views.CardInfoList.as_view()),
-    # path('site/all/<int:pk>', views.CardInfoDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
