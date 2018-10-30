@@ -2,6 +2,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 migrations/
+static/
 
 db.sqlite3
 .vscode

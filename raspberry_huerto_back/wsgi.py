@@ -12,6 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE',
-                      'raspberry_huerto_back.settings')
+                      'raspberry_huerto_back.settings.prod')
 
 application = get_wsgi_application()
