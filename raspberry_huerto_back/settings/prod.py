@@ -1,6 +1,6 @@
 from .base import *
 
-DEBUG = False
+DEBUG = True
 PROD = True
 
 ALLOWED_HOSTS = ['*']
@@ -13,8 +13,12 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, '..', 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'huerto',
+        'USER': 'boss',
+        'PASSWORD': 'bossHUERTO',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
