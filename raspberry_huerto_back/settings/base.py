@@ -14,8 +14,10 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'corsheaders',
-    'card_info.apps.CardInfoConfig',
     'settings_app.apps.SettingsAppConfig',
+    'humidity.humidity_ground.apps.HumidityGroundConfig',
+    'humidity.humidity_air.apps.HumidityAirConfig',
+    'temperature.temperature_air.apps.TemperatureAirConfig',
 ]
 
 MIDDLEWARE = [
