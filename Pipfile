@@ -10,4 +10,4 @@ Django = "==2.1.2"
 requests = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.5"
