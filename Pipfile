@@ -1,0 +1,13 @@
+[packages]
+djangorestframework = "==3.9.0"
+django-extensions = "==2.1.3"
+djangorestframework-camel-case = "==0.2.0"
+django-cors-headers = "==2.4.0"
+autopep8 = "==1.4.2"
+httpie = "==0.9.9"
+pylint = "==2.1.1"
+Django = "==2.1.2"
+requests = "*"
+
+[requires]
+python_version = "3.6"

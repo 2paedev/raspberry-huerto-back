@@ -74,6 +74,8 @@ In browser, navigate to http://127.0.0.1:8000
     - http://127.0.0.1:8000/api/temperature/air?startDate="DD/MM/YYYY"&endDate="DD/MM/YYYY"
     - http://127.0.0.1:8000/api/humidity/air (return all data relate to humidity-air between two dates)
     - http://127.0.0.1:8000/api/humidity/air?startDate="DD/MM/YYYY"&endDate="DD/MM/YYYY"
+    - http://127.0.0.1:8000/api/aemet/city-info
+    - http://127.0.0.1:8000/api/aemet/prediction
 
 ### Prod environment:
 - DIGITAL OCEAN SERVER

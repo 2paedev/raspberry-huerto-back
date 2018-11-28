@@ -6,5 +6,6 @@ urlpatterns = [
     path('api/humidity/', include('humidity.urls')),
     path('api/temperature/', include('temperature.urls')),
     path('api/settings/', include('settings_app.urls')),
+    path('api/aemet/', include('aemet.urls')),
     path('admin/', admin.site.urls),
 ]
